@@ -5,7 +5,7 @@
 
 <br/>
 <div align="center">
-    <a href="https://bugstack.cn" style="text-decoration:none"><img src="https://bugstack.cn/assets/images/icon.svg" width="128px"></a>
+    <a href="https://bugstack.cn" style="text-decoration:none"><img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/210804_xfg_buildFramework/doc/_media/lottery.png" width="128px"></a>
 </div>
 <br/> 
 
