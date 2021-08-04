@@ -1,29 +1,11 @@
-# Lottery
+# Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践
 
-## 1. 构建框架
+>小傅哥，一线互联网 Java 工程师、架构师，开发过交易、营销类项目，实现过运营、活动类项目，设计过中间件，组织过系统重构，编写过技术专利。不仅从事业务系统的开发工作，也经常做一些字节码插桩类的设计和实现，对架构的设计和落地有丰富的经验。在热衷于Java语言的同时，也喜欢研究中继器、I/O板卡、C#和PHP，是一个技术活跃的折腾者。
+>[:pencil2: 虫洞 · 科技栈，博主](https://bugstack.cn)，[:blue_book: 《重学Java设计模式》图书作者](https://item.jd.com/13218336.html)
 
-分支：210804_xfg_buildFramework
-内容：通过创建第一个活动表信息，对框架引入相应的技术栈，完成CRUD操作
+<br/>
+<div align="center">
+    <a href="https://bugstack.cn" style="text-decoration:none"><img src="https://bugstack.cn/assets/images/icon.svg" width="128px"></a>
+</div>
+<br/> 
 
-```sql
-create table activity
-(
-    id bigint auto_increment comment '自增ID' primary key,
-    activityId bigint null comment '活动ID',
-    beginDateTime datetime not null comment '开始时间',
-    endDateTime datetime not null comment '结束时间',
-    stockAllTotal int not null comment '库存(总)',
-    stockDayTotal int not null comment '库存(日)',
-    takeAllCount int null comment '每人可参与次数(总)',
-    takeDayCount int null comment '每人可参与次数(日)',
-    state int null comment '活动状态：编辑、提审、撤审、通过、运行、拒绝、关闭、开启',
-    creator varchar(64) not null comment '创建人',
-    activityName varchar(64) not null comment '活动名称',
-    activityDesc varchar(128) null comment '活动描述',
-    createTime datetime not null comment '创建时间',
-    updateTime datetime not null comment '修改时间'
-);
-
-create unique index activity_id_uindex
-    on activity (id);
-```
