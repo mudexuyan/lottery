@@ -63,8 +63,8 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 ## 📘 章节目录
 
 - [x] [`第 01 章：开篇介绍 - 怎么上手、学到哪些`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2001%20%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%20-%20%E6%80%8E%E4%B9%88%E4%B8%8A%E6%89%8B%E3%80%81%E5%AD%A6%E5%88%B0%E5%93%AA%E4%BA%9B.md)
-- [x] [`第 02 章：搭建(DDD + RPC)分布式架构`](#)
-- [x] [`第 03 章：跑通广播模式RPC过程调用`](#)
+- [ ] [`第 02 章：搭建(DDD + RPC)分布式架构`](#)
+- [ ] [`第 03 章：跑通广播模式RPC过程调用`](#)
 - [ ] [`第 04 章：待归档`]()
 
 ## 🐾 问题交流
