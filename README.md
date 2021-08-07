@@ -19,7 +19,7 @@
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
 - [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
-- [开发日记](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0)
+- [章节目录](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0)
 - [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
@@ -60,7 +60,7 @@ ci:       与CI（持续集成服务）有关的改动
 chore:    不修改src或者test的其余修改，例如构建过程或辅助工具的变动
 ```
 
-## 📘 开发日记
+## 📘 章节目录
 
 - [x] [`第 01 章：开篇介绍`](#)
 - [x] [`第 02 章：搭建(DDD + RPC)分布式架构`](#)
