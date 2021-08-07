@@ -14,8 +14,6 @@
 
 >` Lottery 抽奖系统` 项目是一款互联网面向C端人群营销活动类的抽奖系统，可以提供抽奖活动玩法策略的创建、参与、记账、发奖等逻辑功能。在使用的过程中运营人员通过创建概率类奖品的抽奖玩法，对用户进行拉新、促活、留存，通常这样的系统会用在电商、外卖、出行、公众号运营等各类场景中。By 小傅哥，[《重学Java设计模式》](https://item.jd.com/13218336.html)图书作者，沉淀、分享、成长，让自和他人都能有所收获！
 
-<br/>
-
 ⛳ **目录**
 
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
@@ -84,6 +82,10 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
     
 ## 🎉 感谢支持
 
+![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/background.png)
+
+---
+
 参与到项目开发学习过程中的小伙伴，可以通过PR提交个人对项目中学习过程中一些关于，代码优化、逻辑完善、问题修复等各项内容。当你的代码完整的提交以后，我会进行 `review` 通过以后进行合并以及记录你的提交信息。
 
 <a href="#小傅哥">
@@ -99,6 +101,3 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
     <img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/h_3.jpeg" style="border-radius:5px" width="50px">
 </a>
 
-![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/background.png)
-
----
