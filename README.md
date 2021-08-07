@@ -37,8 +37,8 @@
 
 ## 📘 开发日志
 
-- [x] [`第 01 节：开篇介绍 - 怎么上手、学到哪些`](#)
-- [ ] [`第 02 节：搭建(DDD + RPC)分布式架构`](#)
+- [x] [`第 01 节：开篇介绍 - 怎么上手、学到哪些`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2001%20%E8%8A%82%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%20-%20%E6%80%8E%E4%B9%88%E4%B8%8A%E6%89%8B%E3%80%81%E5%AD%A6%E5%88%B0%E5%93%AA%E4%BA%9B.md)
+- [x] [`第 02 节：搭建(DDD + RPC)分布式架构`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2002%20%E8%8A%82%EF%BC%9A%E6%90%AD%E5%BB%BA(DDD%20+%20RPC)%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84.md)
 - [ ] [`第 03 节：跑通广播模式RPC过程调用`](#)
 - [ ] [`第 04 节：待归档`]()
 
