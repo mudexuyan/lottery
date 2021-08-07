@@ -18,8 +18,8 @@
 
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
 - [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
+- [开发日志](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
-- [章节目录](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0)
 - [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
@@ -34,6 +34,13 @@
 ## 🎨 系统架构
 
 - 待编写，当设计和输出完第一章节后，陆续补全系统架构
+
+## 📘 开发日志
+
+- [x] [`第 01 节：开篇介绍 - 怎么上手、学到哪些`](#)
+- [ ] [`第 02 节：搭建(DDD + RPC)分布式架构`](#)
+- [ ] [`第 03 节：跑通广播模式RPC过程调用`](#)
+- [ ] [`第 04 节：待归档`]()
 
 ## 📐 开发规范
 
@@ -59,13 +66,6 @@ perf:     提高性能的改动
 ci:       与CI（持续集成服务）有关的改动
 chore:    不修改src或者test的其余修改，例如构建过程或辅助工具的变动
 ```
-
-## 📘 章节目录
-
-- [x] [`第 01 章：开篇介绍 - 怎么上手、学到哪些`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2001%20%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%20-%20%E6%80%8E%E4%B9%88%E4%B8%8A%E6%89%8B%E3%80%81%E5%AD%A6%E5%88%B0%E5%93%AA%E4%BA%9B.md)
-- [ ] [`第 02 章：搭建(DDD + RPC)分布式架构`](#)
-- [ ] [`第 03 章：跑通广播模式RPC过程调用`](#)
-- [ ] [`第 04 章：待归档`]()
 
 ## 🐾 问题交流
 
