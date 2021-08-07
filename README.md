@@ -22,17 +22,17 @@
 
 ⛳ **目录**
 
-- [学习说明]()
-- [项目介绍]()
-- [系统架构]()
-- [开发规范(分支、提交)]()
-- [开发日记]()
-- [问题交流]()
-- [感谢支持]()
+- [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
+- [项目介绍](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
+- [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
+- [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
+- [开发日记](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0)
+- [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
+- [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
 ## 📝 学习说明
 
-`在此项目中你会学习到互联网公司关于C端项目开发时候用到的一些，技术、架构、规范等内容。由于项目为实战类编程项目，在学习的过程中需要上手操作，小傅哥会把系统的搭建拉不同的分支列为每一个章节进行设计和实现并记录到开发日记中，读者在学习的过程中可以结合这部分内容边看文章边写代码实践。`
+在此项目中你会学习到互联网公司关于C端项目开发时候用到的一些，技术、架构、规范等内容。由于项目为实战类编程项目，在学习的过程中需要上手操作，小傅哥会把系统的搭建拉不同的分支列为每一个章节进行设计和实现并记录到开发日记中，读者在学习的过程中可以结合这部分内容边看文章边写代码实践。
 
 - 技术：SpringBoot、Mybatis、Dubbo、MQ、Redis、Mysql、ELK、分库分表、Otter
 - 架构：DDD 领域驱动设计、充血模型、设计模式
