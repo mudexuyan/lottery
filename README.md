@@ -1,12 +1,5 @@
 # :gift: Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践
 
-![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/background.png)
-
----
-
->此项目是一款互联网面向C端人群营销活动类的抽奖系统，可以提供抽奖活动玩法策略的创建、参与、记账、发奖等逻辑功能。在使用的过程中运营人员通过创建概率类奖品的抽奖玩法，对用户进行拉新、促活、留存，通常这样的系统会用在电商、外卖、出行、公众号运营等各类场景中。By 小傅哥，[《重学Java设计模式》](https://item.jd.com/13218336.html)图书作者，沉淀、分享、成长，让自和他人都能有所收获！
-
-<br/>
 <div align="center">
     <a href="https://bugstack.cn" style="text-decoration:none"><img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/lottery.png" width="128px"></a>
 </div>
@@ -18,6 +11,10 @@
 <a href="#">分布式</a> •    
 <a href="#">规则引擎</a>
 </div>
+
+>` Lottery 抽奖系统` 项目是一款互联网面向C端人群营销活动类的抽奖系统，可以提供抽奖活动玩法策略的创建、参与、记账、发奖等逻辑功能。在使用的过程中运营人员通过创建概率类奖品的抽奖玩法，对用户进行拉新、促活、留存，通常这样的系统会用在电商、外卖、出行、公众号运营等各类场景中。By 小傅哥，[《重学Java设计模式》](https://item.jd.com/13218336.html)图书作者，沉淀、分享、成长，让自和他人都能有所收获！
+
+<br/>
 
 ⛳ **目录**
 
@@ -101,3 +98,7 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 <a href="#豆豆">
     <img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/h_3.jpeg" style="border-radius:5px" width="50px">
 </a>
+
+![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/background.png)
+
+---
