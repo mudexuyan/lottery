@@ -84,8 +84,6 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 ![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/background.png)
 
----
-
 参与到项目开发学习过程中的小伙伴，可以通过PR提交个人对项目中学习过程中一些关于，代码优化、逻辑完善、问题修复等各项内容。当你的代码完整的提交以后，我会进行 `review` 通过以后进行合并以及记录你的提交信息。
 
 <a href="#小傅哥">
