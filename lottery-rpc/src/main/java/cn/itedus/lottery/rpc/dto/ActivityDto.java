@@ -25,17 +25,11 @@ public class ActivityDto implements Serializable {
     // 结束时间
     private Date endDateTime;
 
-    // 库存(总)
-    private Integer stockAllTotal;
+    // 库存
+    private Integer stockCount;
 
-    // 库存(日)
-    private Integer stockDayTotal;
-
-    // 每人可参与次数(总)
-    private Integer takeAllCount;
-
-    // 每人可参与次数(日)
-    private Integer takeDayCount;
+    // 每人可参与次数
+    private Integer takeCount;
 
     // 活动状态：编辑、提审、撤审、通过、运行、拒绝、关闭、开启
     private Integer state;
@@ -80,36 +74,20 @@ public class ActivityDto implements Serializable {
         this.endDateTime = endDateTime;
     }
 
-    public Integer getStockAllTotal() {
-        return stockAllTotal;
+    public Integer getStockCount() {
+        return stockCount;
     }
 
-    public void setStockAllTotal(Integer stockAllTotal) {
-        this.stockAllTotal = stockAllTotal;
+    public void setStockCount(Integer stockCount) {
+        this.stockCount = stockCount;
     }
 
-    public Integer getStockDayTotal() {
-        return stockDayTotal;
+    public Integer getTakeCount() {
+        return takeCount;
     }
 
-    public void setStockDayTotal(Integer stockDayTotal) {
-        this.stockDayTotal = stockDayTotal;
-    }
-
-    public Integer getTakeAllCount() {
-        return takeAllCount;
-    }
-
-    public void setTakeAllCount(Integer takeAllCount) {
-        this.takeAllCount = takeAllCount;
-    }
-
-    public Integer getTakeDayCount() {
-        return takeDayCount;
-    }
-
-    public void setTakeDayCount(Integer takeDayCount) {
-        this.takeDayCount = takeDayCount;
+    public void setTakeCount(Integer takeCount) {
+        this.takeCount = takeCount;
     }
 
     public Integer getState() {

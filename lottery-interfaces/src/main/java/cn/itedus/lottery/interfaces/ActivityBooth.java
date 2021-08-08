@@ -36,10 +36,8 @@ public class ActivityBooth implements IActivityBooth {
         activityDto.setActivityDesc(activity.getActivityDesc());
         activityDto.setBeginDateTime(activity.getBeginDateTime());
         activityDto.setEndDateTime(activity.getEndDateTime());
-        activityDto.setStockAllTotal(activity.getStockAllTotal());
-        activityDto.setStockDayTotal(activity.getStockDayTotal());
-        activityDto.setTakeAllCount(activity.getStockAllTotal());
-        activityDto.setTakeDayCount(activity.getStockDayTotal());
+        activityDto.setStockCount(activity.getStockCount());
+        activityDto.setTakeCount(activity.getTakeCount());
 
         return new ActivityRes(new Result(Constants.ResponseCode.SUCCESS.getCode(), Constants.ResponseCode.SUCCESS.getInfo()), activityDto);
     }

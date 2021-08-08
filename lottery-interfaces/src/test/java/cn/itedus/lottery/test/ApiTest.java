@@ -35,10 +35,8 @@ public class ApiTest {
         activity.setActivityDesc("仅用于插入数据测试");
         activity.setBeginDateTime(new Date());
         activity.setEndDateTime(new Date());
-        activity.setStockAllTotal(100);
-        activity.setStockDayTotal(10);
-        activity.setTakeAllCount(10);
-        activity.setTakeDayCount(1);
+        activity.setStockCount(100);
+        activity.setTakeCount(10);
         activity.setState(0);
         activity.setCreator("xiaofuge");
         activityDao.insert(activity);
