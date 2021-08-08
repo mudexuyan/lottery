@@ -5,18 +5,15 @@
     <insert id="insert" parameterType="cn.itedus.lottery.infrastructure.po.Activity">
         INSERT INTO activity
         (activityId, activityName, activityDesc,beginDateTime, endDateTime,
-        stockAllTotal, stockDayTotal, takeAllCount, takeDayCount, state,
-        creator, createTime, updateTime)
+        stockCount, takeCount, state, creator, createTime, updateTime)
         VALUES
         (#{activityId}, #{activityName}, #{activityDesc},#{beginDateTime}, #{endDateTime},
-         #{stockAllTotal}, #{stockDayTotal}, #{takeAllCount}, #{takeDayCount}, #{state},
-         #{creator}, now(), now())
+         #{stockCount}, #{takeCount}, #{state}, #{creator}, now(), now())
     </insert>
 
     <select id="queryActivityById" parameterType="java.lang.Long" resultType="cn.itedus.lottery.infrastructure.po.Activity">
         SELECT activityId, activityName, activityDesc,beginDateTime, endDateTime,
-        stockAllTotal, stockDayTotal, takeAllCount, takeDayCount, state,
-        creator, createTime, updateTime
+        stockCount, takeCount, state, creator, createTime, updateTime
         FROM activity
         WHERE activityId = #{activityId}
     </select>
