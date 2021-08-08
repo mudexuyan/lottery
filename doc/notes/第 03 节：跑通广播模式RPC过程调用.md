@@ -37,10 +37,8 @@
 | activityDesc  | varchar(128) | 活动描述                                                 |
 | beginDateTime | datetime     | 开始时间                                                 |
 | endDateTime   | datetime     | 结束时间                                                 |
-| stockAllTotal | int(11)      | 库存(总)                                                 |
-| stockDayTotal | int(11)      | 库存(日)                                                 |
-| takeAllCount  | int(11)      | 每人可参与次数(总)                                       |
-| takeDayCount  | int(11)      | 每人可参与次数(日)                                       |
+| stockCount    | int(11)      | 库存                                                     |
+| takeCount     | int(11)      | 每人可参与次数                                       |
 | state         | int(4)       | 活动状态：编辑、提审、撤审、通过、运行、拒绝、关闭、开启 |
 | creator       | varchar(64)  | 创建人                                                   |
 | createTime    | datetime     | 创建时间                                                 |
@@ -353,7 +351,7 @@ public class ApiTest {
 **测试结果**
 
 ```java
-2021-08-08 12:07:34.898  INFO 9474 --- [           main] cn.itedus.lottery.test.ApiTest           : 测试结果：{"activity":{"activityDesc":"傅哥的活动","activityId":100001,"activityName":"测试活动","beginDateTime":1628061494000,"endDateTime":1628061494000,"stockAllTotal":100,"stockDayTotal":10,"takeAllCount":100,"takeDayCount":10},"result":{"code":"0000","info":"成功"}}
+2021-08-08 12:07:34.898  INFO 9474 --- [           main] cn.itedus.lottery.test.ApiTest           : 测试结果：{"activity":{"activityDesc":"傅哥的活动","activityId":100001,"activityName":"测试活动","beginDateTime":1628061494000,"endDateTime":1628061494000,"stockCount":100,"takeCount":10},"result":{"code":"0000","info":"成功"}}
 2021-08-08 12:07:34.915  INFO 9474 --- [extShutdownHook] .b.c.e.AwaitingNonWebApplicationListener :  [Dubbo] Current Spring Boot Application is about to shutdown...
 ```
 
