@@ -20,7 +20,7 @@ import javax.annotation.Resource;
  * 活动展台
  */
 @Service
-public class ActivityController implements IActivityBooth {
+public class ActivityBooth implements IActivityBooth {
 
     @Resource
     private IActivityDao activityDao;
