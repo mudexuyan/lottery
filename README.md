@@ -40,8 +40,9 @@
 - [x] [`第 01 节：开篇介绍 - 怎么上手、学到哪些`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2001%20%E8%8A%82%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%20-%20%E6%80%8E%E4%B9%88%E4%B8%8A%E6%89%8B%E3%80%81%E5%AD%A6%E5%88%B0%E5%93%AA%E4%BA%9B.md)
 - [x] [`第 02 节：搭建(DDD + RPC)分布式架构`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2002%20%E8%8A%82%EF%BC%9A%E6%90%AD%E5%BB%BA(DDD%20+%20RPC)%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84.md)
 - [x] [`第 03 节：跑通广播模式RPC过程调用`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2003%20%E8%8A%82%EF%BC%9A%E8%B7%91%E9%80%9A%E5%B9%BF%E6%92%AD%E6%A8%A1%E5%BC%8FRPC%E8%BF%87%E7%A8%8B%E8%B0%83%E7%94%A8.md)
-- [x] [`第 04 节：抽奖活动策略玩法库表设计和创建`](#)
-- [ ] [`第 05 节：待归档`]()
+- [x] [`第 04 节：抽奖活动策略玩法库表设计和创建`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/notes/%E7%AC%AC%2004%20%E8%8A%82%EF%BC%9A%E6%8A%BD%E5%A5%96%E6%B4%BB%E5%8A%A8%E7%AD%96%E7%95%A5%E7%8E%A9%E6%B3%95%E5%BA%93%E8%A1%A8%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%88%9B%E5%BB%BA.md)
+- [ ] [`第 05 节：抽奖策略领域模块设计和开发`](#)
+- [ ] [`第 06 节：待归档`](#)
 
 ## 📐 开发规范
 
