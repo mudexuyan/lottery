@@ -351,7 +351,7 @@ public class ApiTest {
 **测试结果**
 
 ```java
-2021-08-08 12:07:34.898  INFO 9474 --- [           main] cn.itedus.lottery.test.ApiTest           : 测试结果：{"activity":{"activityDesc":"傅哥的活动","activityId":100001,"activityName":"测试活动","beginDateTime":1628061494000,"endDateTime":1628061494000,"stockCount":100,"takeCount":10},"result":{"code":"0000","info":"成功"}}
+2021-08-08 12:07:34.898  INFO 9474 --- [           main] cn.itedus.lottery.test.SpringRunnerTest           : 测试结果：{"activity":{"activityDesc":"傅哥的活动","activityId":100001,"activityName":"测试活动","beginDateTime":1628061494000,"endDateTime":1628061494000,"stockCount":100,"takeCount":10},"result":{"code":"0000","info":"成功"}}
 2021-08-08 12:07:34.915  INFO 9474 --- [extShutdownHook] .b.c.e.AwaitingNonWebApplicationListener :  [Dubbo] Current Spring Boot Application is about to shutdown...
 ```
 
