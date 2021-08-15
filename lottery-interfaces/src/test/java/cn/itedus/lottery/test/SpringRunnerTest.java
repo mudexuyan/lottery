@@ -32,24 +32,7 @@ public class SpringRunnerTest {
     @Resource
     private IActivityDao activityDao;
 
-    @Resource
-    private IDrawAlgorithm randomDrawAlgorithm;
 
-    @Test
-    public void test_randomDrawAlgorithm() {
-        List<AwardRateInfo> strategyList = new ArrayList<>();
-
-        strategyList.add(new AwardRateInfo("一等奖：彩电", new BigDecimal("0.2")));
-        strategyList.add(new AwardRateInfo("二等奖：彩电", new BigDecimal("0.3")));
-        strategyList.add(new AwardRateInfo("三等奖：彩电", new BigDecimal("0.5")));
-
-        randomDrawAlgorithm.initRateTuple(100001L, strategyList);
-
-        for (int i = 0; i < 20; i++) {
-            System.out.println("中奖结果：" + randomDrawAlgorithm.randomDraw(100001L));
-        }
-
-    }
 
     @Test
     public void test_insert() {
