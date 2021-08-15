@@ -3,11 +3,9 @@ package cn.itedus.lottery.domain.strategy.service.draw.impl;
 import cn.itedus.lottery.domain.strategy.model.aggregates.StrategyRich;
 import cn.itedus.lottery.domain.strategy.model.req.DrawReq;
 import cn.itedus.lottery.domain.strategy.model.res.DrawResult;
-import cn.itedus.lottery.domain.strategy.model.vo.AwardRateInfo;
 import cn.itedus.lottery.domain.strategy.repository.IStrategyRepository;
 import cn.itedus.lottery.domain.strategy.service.algorithm.IDrawAlgorithm;
 import cn.itedus.lottery.domain.strategy.service.draw.DrawBase;
-import cn.itedus.lottery.domain.strategy.service.draw.DrawConfig;
 import cn.itedus.lottery.domain.strategy.service.draw.IDrawExec;
 import cn.itedus.lottery.infrastructure.po.Award;
 import cn.itedus.lottery.infrastructure.po.Strategy;
@@ -19,7 +17,6 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
@@ -36,7 +33,6 @@ public class DrawExecImpl extends DrawBase implements IDrawExec {
 
     @Override
     public DrawResult doDrawExec(DrawReq req) {
-
         logger.info("执行策略抽奖开始，strategyId：{}", req.getStrategyId());
 
         // 获取抽奖策略配置数据
