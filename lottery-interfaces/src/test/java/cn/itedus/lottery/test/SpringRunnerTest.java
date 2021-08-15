@@ -1,5 +1,7 @@
 package cn.itedus.lottery.test;
 
+import cn.itedus.lottery.domain.strategy.model.vo.AwardRateInfo;
+import cn.itedus.lottery.domain.strategy.service.algorithm.IDrawAlgorithm;
 import cn.itedus.lottery.infrastructure.dao.IActivityDao;
 import cn.itedus.lottery.infrastructure.po.Activity;
 import com.alibaba.fastjson.JSON;
@@ -11,10 +13,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Random;
+import java.util.List;
 
 /**
  * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
@@ -28,9 +30,25 @@ public class SpringRunnerTest {
     private Logger logger = LoggerFactory.getLogger(SpringRunnerTest.class);
 
     @Resource
-    IActivityDao activityDao;
+    private IActivityDao activityDao;
 
-    public SpringRunnerTest() throws NoSuchAlgorithmException {
+    @Resource
+    private IDrawAlgorithm randomDrawAlgorithm;
+
+    @Test
+    public void test_randomDrawAlgorithm() {
+        List<AwardRateInfo> strategyList = new ArrayList<>();
+
+        strategyList.add(new AwardRateInfo("一等奖：彩电", new BigDecimal("0.2")));
+        strategyList.add(new AwardRateInfo("二等奖：彩电", new BigDecimal("0.3")));
+        strategyList.add(new AwardRateInfo("三等奖：彩电", new BigDecimal("0.5")));
+
+        randomDrawAlgorithm.initRateTuple(100001L, strategyList);
+
+        for (int i = 0; i < 20; i++) {
+            System.out.println("中奖结果：" + randomDrawAlgorithm.randomDraw(100001L));
+        }
+
     }
 
     @Test
