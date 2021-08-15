@@ -11,12 +11,11 @@ import java.math.BigDecimal;
  */
 public class StrategyDetail {
 
-
     // 自增ID
     private String id;
 
     // 策略ID
-    private String strategyId;
+    private Long strategyId;
 
     // 奖品ID
     private String awardId;
@@ -41,11 +40,11 @@ public class StrategyDetail {
         this.id = id;
     }
 
-    public String getStrategyId() {
+    public Long getStrategyId() {
         return strategyId;
     }
 
-    public void setStrategyId(String strategyId) {
+    public void setStrategyId(Long strategyId) {
         this.strategyId = strategyId;
     }
 

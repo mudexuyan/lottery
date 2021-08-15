@@ -35,6 +35,13 @@ public interface IDrawAlgorithm {
     void initRateTuple(Long strategyId, List<AwardRateInfo> awardRateInfoList);
 
     /**
+     * 判断是否已经，做了数据初始化
+     * @param strategyId
+     * @return
+     */
+    boolean isExistRateTuple(Long strategyId);
+
+    /**
      * SecureRandom 生成随机数，索引到对应的奖品信息返回结果
      *
      * @param strategyId 策略ID

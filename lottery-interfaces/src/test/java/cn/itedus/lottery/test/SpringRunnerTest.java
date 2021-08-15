@@ -1,7 +1,10 @@
 package cn.itedus.lottery.test;
 
+import cn.itedus.lottery.domain.strategy.model.req.DrawReq;
+import cn.itedus.lottery.domain.strategy.model.res.DrawResult;
 import cn.itedus.lottery.domain.strategy.model.vo.AwardRateInfo;
 import cn.itedus.lottery.domain.strategy.service.algorithm.IDrawAlgorithm;
+import cn.itedus.lottery.domain.strategy.service.draw.IDrawExec;
 import cn.itedus.lottery.infrastructure.dao.IActivityDao;
 import cn.itedus.lottery.infrastructure.po.Activity;
 import com.alibaba.fastjson.JSON;
@@ -10,6 +13,7 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.json.JsonbTester;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
@@ -32,7 +36,16 @@ public class SpringRunnerTest {
     @Resource
     private IActivityDao activityDao;
 
+    @Resource
+    private IDrawExec drawExec;
 
+    @Test
+    public void test_drawExec() {
+        drawExec.doDrawExec(new DrawReq("小傅哥", 10001L));
+        drawExec.doDrawExec(new DrawReq("小佳佳", 10001L));
+        drawExec.doDrawExec(new DrawReq("小蜗牛", 10001L));
+        drawExec.doDrawExec(new DrawReq("八杯水", 10001L));
+    }
 
     @Test
     public void test_insert() {

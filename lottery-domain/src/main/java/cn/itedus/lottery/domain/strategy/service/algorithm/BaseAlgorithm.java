@@ -43,9 +43,15 @@ public abstract class BaseAlgorithm implements IDrawAlgorithm {
             for (int i = cursorVal + 1; i <= (rateVal + cursorVal); i++) {
                 rateTuple[hashIdx(i)] = awardRateInfo.getAwardId();
             }
+
             cursorVal += rateVal;
 
         }
+    }
+
+    @Override
+    public boolean isExistRateTuple(Long strategyId) {
+        return rateTupleMap.containsKey(strategyId);
     }
 
     /**

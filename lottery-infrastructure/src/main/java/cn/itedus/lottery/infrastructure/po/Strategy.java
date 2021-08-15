@@ -11,7 +11,6 @@ import java.util.Date;
  */
 public class Strategy {
 
-
     // 自增ID
     private Long id;
 
