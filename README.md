@@ -68,6 +68,12 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 ## 🐾 问题交流
 
+- 你可以在星球中选择🏷标签`#抽奖系统`进行发问
+
+<img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/d-01.jpeg" width="414" height="891"/>
+
+- 也可以提交 issue：[https://codechina.csdn.net/KnowledgePlanet/Lottery/-/issues](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/issues)
+
 - **加群交流**
 
     本群的宗旨是给大家提供一个良好的技术学习交流平台，所以杜绝一切广告！由于微信群人满 100 之后无法加入，请扫描下方二维码先添加作者 “小傅哥” 微信(fustack)，备注：`Spring学习加群`。
@@ -78,7 +84,7 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
     沉淀、分享、成长，专注于原创专题案例，以最易学习编程的方式分享知识，让自己和他人都能有所收获。目前已完成的专题有；Netty4.x实战专题案例、用Java实现JVM、基于JavaAgent的全链路监控、手写RPC框架、DDD专题案例、源码分析等。
     
-    <img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/bugstack.png" width="180" height="180"/>
+    
     
 ## 🎉 感谢支持
 
