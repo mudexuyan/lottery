@@ -1,5 +1,7 @@
 # :gift: Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践
 
+![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/首图.png)
+
 <div align="center">
     <a href="https://bugstack.cn" style="text-decoration:none"><img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/lottery.png" width="128px"></a>
 </div>
