@@ -27,6 +27,7 @@
 - [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
 - [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
+- [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
 ## 📝 学习说明
