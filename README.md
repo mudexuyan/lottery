@@ -16,17 +16,18 @@
 
 ⛳ **目录**
 
-- [Wiki小册，Go！](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home)
+- [《抽奖系统开发小册》，Go！](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home)
     - [x] [第 01 节：开篇介绍](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/%E7%AC%AC-01-%E8%8A%82%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D)
     - [x] [第 02 节：搭建(DDD + RPC)架构](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/%E7%AC%AC-02-%E8%8A%82%EF%BC%9A%E6%90%AD%E5%BB%BA(DDD---RPC)%E6%9E%B6%E6%9E%84)
     - [x] [第 03 节：跑通广播模式RPC过程调用](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/%E7%AC%AC-03-%E8%8A%82%EF%BC%9A%E8%B7%91%E9%80%9A%E5%B9%BF%E6%92%AD%E6%A8%A1%E5%BC%8FRPC%E8%BF%87%E7%A8%8B%E8%B0%83%E7%94%A8)
     - [x] [第 04 节：抽奖活动策略库表设计](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/%E7%AC%AC-04-%E8%8A%82%EF%BC%9A%E6%8A%BD%E5%A5%96%E6%B4%BB%E5%8A%A8%E7%AD%96%E7%95%A5%E5%BA%93%E8%A1%A8%E8%AE%BE%E8%AE%A1)
     - [x] [第 05 节：抽奖策略领域模块开发](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/%E7%AC%AC-05-%E8%8A%82%EF%BC%9A%E6%8A%BD%E5%A5%96%E7%AD%96%E7%95%A5%E9%A2%86%E5%9F%9F%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91)
-- [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
-- [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
+    - [ ] [第 06 节：待归档](#)
+- [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
+- [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
 - [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
-- [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
+- [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
 ## 📝 学习说明
 
