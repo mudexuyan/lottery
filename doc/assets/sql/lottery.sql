@@ -59,13 +59,17 @@ create table strategy
 -- auto-generated definition
 create table strategy_detail
 (
-    id         bigint(11) auto_increment comment '自增ID'
+    id                bigint(11) auto_increment comment '自增ID'
         primary key,
-    strategyId bigint(11)    not null comment '策略ID',
-    awardId    bigint(11)    null comment '奖品ID',
-    awardCount int           null comment '奖品数量',
-    awardRate  decimal(5, 2) null comment '中奖概率',
-    createTime datetime      null comment '创建时间',
-    updateTime datetime      null comment '修改时间'
+    strategyId        bigint(11)    not null comment '策略ID',
+    awardId           varchar(64)   null comment '奖品ID',
+    awardDesc         varchar(128)  null comment '奖品描述',
+    awardCount        int           null comment '奖品库存',
+    awardSurplusCount int default 0 null comment '奖品剩余库存',
+    awardRate         decimal(5, 2) null comment '中奖概率',
+    createTime        datetime      null comment '创建时间',
+    updateTime        datetime      null comment '修改时间'
 )
     comment '策略明细';
+
+
