@@ -20,7 +20,7 @@
 
 - [《抽奖系统 | 实战开发小册 • 更新6节》，Go！](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home)
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
-- [系统架构](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
+- [环境配置](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
 - [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
 - [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
@@ -34,10 +34,14 @@
 - 架构：DDD 领域驱动设计、充血模型、设计模式
 - 规范：分支提交规范、代码编写规范
 
-## 🎨 系统架构
+## 🎨 环境配置
 
-- 待编写，当设计和输出完第一章节后，陆续补全系统架构
-
+- 技术栈：JDK1.8、Maven3.6.3、Mysql5.7(可升级配置)，SpringBoot、Mybatis、Dubbo 随POM版本
+- 建表语句：[doc/asserts/sql](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/assets/sql/lottery.sql) - `建议随非分支内sql版本走，因为需求不断迭代升级优化，直接使用最新的会遇到在各个分支下的代码运行问题`
+- Git 使用
+   - 密码方式：登录的用户ID为 CSDN 个人中心的用户ID，[https://i.csdn.net/#/user-center/profile](https://i.csdn.net/#/user-center/profile) 密码为 CSDN 登录密码。如果没有密码或者忘记，可以在 CSDN 登录页找回密码。
+   - SSH 秘钥免登录方式，设置：[https://codechina.csdn.net/-/profile/keys](https://codechina.csdn.net/-/profile/keys) 文档：[生成 SSH 密钥](https://codechina.csdn.net/codechina/help-docs/-/wikis/docs/ssh#%E7%94%9F%E6%88%90-ssh-%E5%AF%86%E9%92%A5)
+   
 ## 📐 开发规范
 
 **分支命名**：日期_姓名首字母缩写_功能单词，如：`210804_xfg_buildFramework`
