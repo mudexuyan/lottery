@@ -22,7 +22,7 @@
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
 - [环境配置](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
-- [问题交流](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
+- [提交作业](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E9%97%AE%E9%A2%98%E4%BA%A4%E6%B5%81)
 - [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
@@ -67,11 +67,20 @@ ci:       与CI（持续集成服务）有关的改动
 chore:    不修改src或者test的其余修改，例如构建过程或辅助工具的变动
 ```
 
-## 🐾 问题交流
+## 🐾 提交作业
 
-- 你可以在星球中选择🏷标签`#抽奖系统`进行发问
+- 你可以在星球APP中提交`作业题目` | 网页提交：[https://t.zsxq.com/MvFYJe2](https://t.zsxq.com/MvFYJe2)
 
-<img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/d-01.jpeg" width="414" height="891"/>
+1. 今天的你学到了哪个章节？
+2. 遇到什么问题？
+3. 怎么解决的？
+4. 掌握到了什么知识？
+
+基于大家的学习反馈，小傅哥会在后续的直播中统一解决相关学习问题。加油，这趟车人人有收获！
+
+注意️：按照作业提交频次和质量，小傅哥会组织一波奖品。具体细则计划Ing
+
+<img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/job.jpg" width="414" height="891"/>
 
 - 也可以提交 issue：[https://codechina.csdn.net/KnowledgePlanet/Lottery/-/issues](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/issues)
 
