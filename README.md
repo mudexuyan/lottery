@@ -22,7 +22,7 @@
 - [学习说明](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E)
 - [环境配置](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
 - [开发规范(分支、提交)](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/wikis/home#-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
-- [学习作业](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/README.md#-%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A)
+- [学习作业](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/README.md#-%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A)
 - [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
 
