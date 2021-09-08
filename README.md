@@ -41,7 +41,8 @@
 - 代码仓库，2种使用方式：
    - 密码方式：登录的用户ID为 CSDN 个人中心的用户ID，[https://i.csdn.net/#/user-center/profile](https://i.csdn.net/#/user-center/profile) 密码为 CSDN 登录密码。如果没有密码或者忘记，可以在 CSDN 登录页找回密码。
    - SSH 秘钥免登录方式，设置：[https://codechina.csdn.net/-/profile/keys](https://codechina.csdn.net/-/profile/keys) 文档：[生成 SSH 密钥](https://codechina.csdn.net/codechina/help-docs/-/wikis/docs/ssh#%E7%94%9F%E6%88%90-ssh-%E5%AF%86%E9%92%A5)
-   
+- 学习使用：下载代码库后，切换本地分支到wiki中章节对应的分支，这样代码与章节内容是对应的，否则你在master看到的是全量代码。   
+
 ## 📐 开发规范
 
 **分支命名**：日期_姓名首字母缩写_功能单词，如：`210804_xfg_buildFramework`
