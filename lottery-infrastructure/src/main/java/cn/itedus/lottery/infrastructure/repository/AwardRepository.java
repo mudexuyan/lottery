@@ -1,8 +1,6 @@
-package cn.itedus.lottery.domain.award.repository.impl;
+package cn.itedus.lottery.infrastructure.repository;
 
 import cn.itedus.lottery.domain.award.repository.IAwardRepository;
-import cn.itedus.lottery.infrastructure.dao.IAwardDao;
-import cn.itedus.lottery.infrastructure.po.Award;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
