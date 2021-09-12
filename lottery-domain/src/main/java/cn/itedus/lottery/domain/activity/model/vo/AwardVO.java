@@ -1,18 +1,13 @@
-package cn.itedus.lottery.infrastructure.po;
-
-import java.util.Date;
+package cn.itedus.lottery.domain.activity.model.vo;
 
 /**
- * @description: 奖品表
+ * @description: 奖品信息配置
  * @author: 小傅哥，微信：fustack
- * @date: 2021/9/4
+ * @date: 2021/9/11
  * @github: https://github.com/fuzhengwei
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
-public class Award {
-
-    /** 自增ID */
-    private Long id;
+public class AwardVO {
 
     /** 奖品ID */
     private String awardId;
@@ -25,20 +20,6 @@ public class Award {
 
     /** 奖品内容「描述、奖品码、sku」 */
     private String awardContent;
-
-    /** 创建时间 */
-    private Date createTime;
-
-    /** 修改时间 */
-    private Date updateTime;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getAwardId() {
         return awardId;
@@ -72,19 +53,14 @@ public class Award {
         this.awardContent = awardContent;
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    @Override
+    public String toString() {
+        return "AwardVO{" +
+                "awardId='" + awardId + '\'' +
+                ", awardType=" + awardType +
+                ", awardName='" + awardName + '\'' +
+                ", awardContent='" + awardContent + '\'' +
+                '}';
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
 }

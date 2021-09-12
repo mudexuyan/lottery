@@ -30,7 +30,7 @@ CREATE TABLE `activity` (
   `end_date_time` datetime DEFAULT NULL COMMENT '结束时间',
   `stock_count` int(11) DEFAULT NULL COMMENT '库存',
   `take_count` int(11) DEFAULT NULL COMMENT '每人可参与次数',
-  `state` tinyint(2) DEFAULT NULL COMMENT '活动状态：编辑、提审、撤审、通过、运行、拒绝、关闭、开启',
+  `state` tinyint(2) DEFAULT NULL COMMENT '活动状态：1编辑、2提审、3撤审、4通过、5运行(审核通过后worker扫描状态)、6拒绝、7关闭、8开启',
   `creator` varchar(64) CHARACTER SET utf8mb4 DEFAULT NULL COMMENT '创建人',
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '修改时间',
