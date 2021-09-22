@@ -1,7 +1,6 @@
 package cn.itedus.lottery.test.domain;
 
 import cn.itedus.lottery.common.Constants;
-import cn.itedus.lottery.common.Result;
 import cn.itedus.lottery.domain.activity.model.aggregates.ActivityConfigRich;
 import cn.itedus.lottery.domain.activity.model.req.ActivityConfigReq;
 import cn.itedus.lottery.domain.activity.model.vo.ActivityVO;
