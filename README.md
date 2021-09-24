@@ -80,7 +80,7 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 基于大家的学习反馈，小傅哥会在后续的直播中统一解决相关学习问题。加油，这趟车人人有收获！
 
-注意️：按照作业提交频次和质量，小傅哥会组织一波奖品。具体细则计划Ing
+注意️：按照作业提交频次和质量，小傅哥会组织一波奖品。**按照作业提交数量、质量、点赞、留言，综合评分，送技术图书等奖品。**
 
 <img src="https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/job.jpg" width="414" height="891"/>
 
