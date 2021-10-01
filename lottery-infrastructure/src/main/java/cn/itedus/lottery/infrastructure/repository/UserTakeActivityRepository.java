@@ -58,7 +58,7 @@ public class UserTakeActivityRepository implements IUserTakeActivityRepository {
         } else {
             userTakeActivity.setTakeCount(takeCount - userTakeLeftCount);
         }
-        String uuid = activityId + "_" + uId + "_" + userTakeActivity.getTakeCount();
+        String uuid = uId + "_" + activityId + "_" + userTakeActivity.getTakeCount();
         userTakeActivity.setUuid(uuid);
 
         userTakeActivityDao.insert(userTakeActivity);
