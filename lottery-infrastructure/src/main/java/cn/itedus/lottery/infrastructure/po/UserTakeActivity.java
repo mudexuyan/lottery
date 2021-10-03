@@ -41,6 +41,11 @@ public class UserTakeActivity {
     private Integer takeCount;
 
     /**
+     * 策略ID
+     */
+    private Long strategyId;
+
+    /**
      * 活动单使用状态 0未使用、1已使用
      * Constants.TaskState
      */
@@ -114,6 +119,14 @@ public class UserTakeActivity {
 
     public void setTakeCount(Integer takeCount) {
         this.takeCount = takeCount;
+    }
+
+    public Long getStrategyId() {
+        return strategyId;
+    }
+
+    public void setStrategyId(Long strategyId) {
+        this.strategyId = strategyId;
     }
 
     public Integer getState() {
