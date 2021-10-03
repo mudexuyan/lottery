@@ -39,6 +39,13 @@ public class UserTakeActivity {
      * 领取次数
      */
     private Integer takeCount;
+
+    /**
+     * 活动单使用状态 0未使用、1已使用
+     * Constants.TaskState
+     */
+    private Integer state;
+
     /**
      * 防重ID
      */
@@ -107,6 +114,14 @@ public class UserTakeActivity {
 
     public void setTakeCount(Integer takeCount) {
         this.takeCount = takeCount;
+    }
+
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
     }
 
     public String getUuid() {
