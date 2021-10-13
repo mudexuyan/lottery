@@ -41,9 +41,6 @@ public class ActivityProcessImpl implements IActivityProcess {
     @Resource
     private Map<Constants.Ids, IIdGenerator> idGeneratorMap;
 
-    @Resource
-    private EngineFilter engineFilter;
-
     @Override
     public DrawProcessResult doDrawProcess(DrawProcessReq req) {
         // 1. 领取活动
