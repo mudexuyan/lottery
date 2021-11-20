@@ -96,6 +96,9 @@ public class ActivityRepository implements IActivityRepository {
         // 查询活动信息
         Activity activity = activityDao.queryActivityById(req.getActivityId());
 
+        // 从缓存中获取库存
+        Object usedStockCountObj =  redisUtil.get(Constants.RedisKey.KEY_LOTTERY_ACTIVITY_STOCK_COUNT(req.getActivityId()));
+
         // 查询领取次数
         UserTakeActivityCount userTakeActivityCountReq = new UserTakeActivityCount();
         userTakeActivityCountReq.setuId(req.getuId());
@@ -111,7 +114,7 @@ public class ActivityRepository implements IActivityRepository {
         activityBillVO.setEndDateTime(activity.getEndDateTime());
         activityBillVO.setTakeCount(activity.getTakeCount());
         activityBillVO.setStockCount(activity.getStockCount());
-        activityBillVO.setStockSurplusCount(activity.getStockSurplusCount());
+        activityBillVO.setStockSurplusCount(null == usedStockCountObj ? activity.getStockSurplusCount() : Integer.parseInt(String.valueOf(usedStockCountObj)));
         activityBillVO.setStrategyId(activity.getStrategyId());
         activityBillVO.setState(activity.getState());
         activityBillVO.setUserTakeLeftCount(null == userTakeActivityCount ? null : userTakeActivityCount.getLeftCount());
