@@ -146,7 +146,7 @@ public class RedisUtil {
      */
     public boolean setNx(String key, Long lockExpireMils) {
         return (boolean) redisTemplate.execute((RedisCallback) connection -> {
-            // 获取锁
+            //获取锁
             return connection.setNX(key.getBytes(), String.valueOf(System.currentTimeMillis() + lockExpireMils + 1).getBytes());
         });
     }
