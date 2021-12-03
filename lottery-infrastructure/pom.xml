@@ -18,6 +18,7 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+        <!-- 自研路由组件，下载构建：https://codechina.csdn.net/KnowledgePlanet/db-router-spring-boot-starter -->
         <dependency>
             <groupId>cn.bugstack.middleware</groupId>
             <artifactId>db-router-spring-boot-starter</artifactId>
