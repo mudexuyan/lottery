@@ -32,14 +32,14 @@ public class KafkaProducer {
      *
      * 启动zk：bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
      * 启动kafka：bin/kafka-server-start.sh -daemon config/server.properties
-     * 创建topic：bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic lottery_invoice
+     * 创建topic：bin/kafka-topics.sh --create --zookeeper 172.17.0.3:2181 --replication-factor 1 --partitions 1 --topic lottery_invoice
      */
     public static final String TOPIC_INVOICE = "lottery_invoice";
 
     /**
      * MQ主题：活动领取记录
      *
-     * 创建topic：bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic lottery_activity_partake
+     * 创建topic：bin/kafka-topics.sh --create --zookeeper 172.17.0.3:2181 --replication-factor 1 --partitions 1 --topic lottery_activity_partake
      */
     public static final String TOPIC_ACTIVITY_PARTAKE = "lottery_activity_partake";
 
