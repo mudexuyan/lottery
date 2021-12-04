@@ -114,7 +114,7 @@ public class ActivityRepository implements IActivityRepository {
         activityBillVO.setEndDateTime(activity.getEndDateTime());
         activityBillVO.setTakeCount(activity.getTakeCount());
         activityBillVO.setStockCount(activity.getStockCount());
-        activityBillVO.setStockSurplusCount(null == usedStockCountObj ? activity.getStockCount() : Integer.parseInt(String.valueOf(usedStockCountObj)));
+        activityBillVO.setStockSurplusCount(null == usedStockCountObj ? activity.getStockSurplusCount() : activity.getStockCount() - Integer.parseInt(String.valueOf(usedStockCountObj)));
         activityBillVO.setStrategyId(activity.getStrategyId());
         activityBillVO.setState(activity.getState());
         activityBillVO.setUserTakeLeftCount(null == userTakeActivityCount ? null : userTakeActivityCount.getLeftCount());
