@@ -56,6 +56,7 @@ spring:
 # xxl-job
 # 官网：https://github.com/xuxueli/xxl-job/
 # 地址：http://localhost:7397/xxl-job-admin 【需要先启动 xxl-job】
+# http://39.96.73.167:8010/xxl-job-admin
 # 账号：admin
 # 密码：123456
 xxl:
