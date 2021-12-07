@@ -16,7 +16,9 @@ public class Constants {
         NO_UPDATE("0004", "SQL操作无更新"),
         LOSING_DRAW("D001", "未中奖"),
         RULE_ERR("D002", "量化人群规则执行失败"),
-        NOT_CONSUMED_TAKE("D003", "未消费活动领取记录");
+        NOT_CONSUMED_TAKE("D003", "未消费活动领取记录"),
+        OUT_OF_STOCK("D004", "活动无库存"),
+        ERR_TOKEN("D005", "分布式锁失败");
 
         private String code;
         private String info;
