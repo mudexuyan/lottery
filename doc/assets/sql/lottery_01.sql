@@ -14,6 +14,10 @@
  Date: 04/12/2021 12:36:47
 */
 
+create database lottery_01;
+
+USE lottery_01;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 

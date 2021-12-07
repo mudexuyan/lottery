@@ -14,6 +14,10 @@
  Date: 04/12/2021 16:28:12
 */
 
+create database xxl_job;
+
+USE xxl_job;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
