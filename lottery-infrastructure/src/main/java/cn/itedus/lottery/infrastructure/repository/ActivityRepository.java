@@ -156,7 +156,7 @@ public class ActivityRepository implements IActivityRepository {
         // 3. 超出库存判断，进行恢复原始库存
         if (stockUsedCount > stockCount) {
             redisUtil.decr(stockKey, 1);
-            return new StockResult(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
+            return new StockResult(Constants.ResponseCode.OUT_OF_STOCK.getCode(), Constants.ResponseCode.OUT_OF_STOCK.getInfo());
         }
 
         // 4. 以活动库存占用编号，生成对应加锁Key，细化锁的颗粒度
@@ -166,7 +166,7 @@ public class ActivityRepository implements IActivityRepository {
         boolean lockToken = redisUtil.setNx(stockTokenKey, 350L);
         if (!lockToken) {
             logger.info("抽奖活动{}用户秒杀{}扣减库存，分布式锁失败：{}", activityId, uId, stockTokenKey);
-            return new StockResult(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
+            return new StockResult(Constants.ResponseCode.ERR_TOKEN.getCode(), Constants.ResponseCode.ERR_TOKEN.getInfo());
         }
 
         return new StockResult(Constants.ResponseCode.SUCCESS.getCode(), Constants.ResponseCode.SUCCESS.getInfo(), stockTokenKey, stockCount - stockUsedCount);
@@ -174,13 +174,6 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public void recoverActivityCacheStockByRedis(Long activityId, String tokenKey, String code) {
-        if (!Constants.ResponseCode.SUCCESS.getCode().equals(code)) {
-            // 1. 获取抽奖活动库存 Key
-            String stockKey = Constants.RedisKey.KEY_LOTTERY_ACTIVITY_STOCK_COUNT(activityId);
-            // 2. 回滚库存操作，此操作非原子性的
-            redisUtil.decr(stockKey, 1);
-            return;
-        }
         // 删除分布式锁 Key
         redisUtil.del(tokenKey);
     }
