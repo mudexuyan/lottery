@@ -72,6 +72,15 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 ## 🐾 学习作业
 
+### 1. 工程作业
+
+- 作业空间：[https://codechina.csdn.net/CreativeAlliance](https://codechina.csdn.net/CreativeAlliance)
+- 使用说明：为星球用户提供工程代码提交空间，你可以把抽奖系统的学习代码提交到空间中，`按照代码仓库名称标准，项目-星球用户编号-作者ID 例如：Lottery-1-xiaofuge`
+
+![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/_media/CreativeAlliance.png)
+
+### 2. 文字作业
+
 - 你可以在星球APP中提交`作业题目` | 网页提交：[https://t.zsxq.com/MvFYJe2](https://t.zsxq.com/MvFYJe2)
 
 1. 今天的你学到了哪个章节？
