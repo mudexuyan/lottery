@@ -77,7 +77,10 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 - 作业空间：[https://codechina.csdn.net/CreativeAlliance](https://codechina.csdn.net/CreativeAlliance)
 - 使用说明：为星球用户提供工程代码提交空间，你可以把抽奖系统的学习代码提交到空间中，`按照代码仓库名称标准，项目-星球用户编号-作者ID 例如：Lottery-1-xiaofuge`
 
-![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/blob/master/doc/_media/CreativeAlliance.png)
+|示意|
+|---|
+| ![](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/raw/master/doc/_media/CreativeAlliance.png) |
+
 
 ### 2. 文字作业
 
