@@ -25,6 +25,7 @@
 - [学习作业 🍁`(留下你的学习足迹，记录、分享、共同成长)`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/tree/master#-%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A)
 - [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
+- [技术联盟](https://codechina.csdn.net/invite_link?invite_code=dvrs56y98qZh2GZwxxn1) - 为星球用户提供工程代码提交空间，方便技术交流。作业项目提交、分享学习代码、问题代码求助，这些你都可以创建仓库提交代码。当然你要有一些代码提交经验。
 
 ## 📝 学习说明
 
