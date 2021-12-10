@@ -25,7 +25,7 @@
 - [学习作业 🍁`(留下你的学习足迹，记录、分享、共同成长)`](https://codechina.csdn.net/KnowledgePlanet/Lottery/-/tree/master#-%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A)
 - [联系作者](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85)
 - [感谢支持](https://codechina.csdn.net/KnowledgePlanet/Lottery#-%E6%84%9F%E8%B0%A2%E6%94%AF%E6%8C%81)
-- [CreativeAlliance 知识星球 • 技术联盟](https://codechina.csdn.net/invite_link?invite_code=dvrs56y98qZh2GZwxxn1) - `为星球用户提供工程代码提交空间，方便技术交流。作业项目提交、分享学习代码、问题代码求助，这些你都可以创建仓库提交代码。当然你要有一些代码提交经验。`
+- [CreativeAlliance 知识星球 • 技术联盟](https://codechina.csdn.net/invite_link?invite_code=Dtw3UbYMh8aufRWYo98j) - `为星球用户提供工程代码提交空间，方便技术交流。作业项目提交、分享学习代码、问题代码求助，这些你都可以创建仓库提交代码。当然你要有一些代码提交经验。`
 
 ## 📝 学习说明
 
@@ -74,7 +74,7 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 ### 1. 工程作业
 
-- 作业空间：[https://codechina.csdn.net/CreativeAlliance](https://codechina.csdn.net/CreativeAlliance)
+- 作业空间：[https://codechina.csdn.net/CreativeAlliance](https://codechina.csdn.net/invite_link?invite_code=Dtw3UbYMh8aufRWYo98j)
 - 使用说明：为星球用户提供工程代码提交空间，你可以把抽奖系统的学习代码提交到空间中，`按照代码仓库名称标准，项目-星球用户编号-作者ID 例如：Lottery-1-xiaofuge`
 
 |示意|
