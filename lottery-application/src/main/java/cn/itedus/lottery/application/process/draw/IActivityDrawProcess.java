@@ -1,8 +1,8 @@
-package cn.itedus.lottery.application.process;
+package cn.itedus.lottery.application.process.draw;
 
-import cn.itedus.lottery.application.process.req.DrawProcessReq;
-import cn.itedus.lottery.application.process.res.DrawProcessResult;
-import cn.itedus.lottery.application.process.res.RuleQuantificationCrowdResult;
+import cn.itedus.lottery.application.process.draw.req.DrawProcessReq;
+import cn.itedus.lottery.application.process.draw.res.DrawProcessResult;
+import cn.itedus.lottery.application.process.draw.res.RuleQuantificationCrowdResult;
 import cn.itedus.lottery.domain.rule.model.req.DecisionMatterReq;
 
 /**
@@ -12,7 +12,7 @@ import cn.itedus.lottery.domain.rule.model.req.DecisionMatterReq;
  * @github: https://github.com/fuzhengwei
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
-public interface IActivityProcess {
+public interface IActivityDrawProcess {
 
     /**
      * 执行抽奖流程

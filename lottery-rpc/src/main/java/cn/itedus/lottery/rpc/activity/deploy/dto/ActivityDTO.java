@@ -1,15 +1,16 @@
-package cn.itedus.lottery.domain.activity.model.vo;
+package cn.itedus.lottery.rpc.activity.deploy.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @description: 活动信息配置
+ * @description: 活动信息
  * @author: 小傅哥，微信：fustack
- * @date: 2021/9/11
+ * @date: 2021/12/11
  * @github: https://github.com/fuzhengwei
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
-public class ActivityVO {
+public class ActivityDTO implements Serializable {
 
     /**
      * 自增ID
@@ -62,7 +63,7 @@ public class ActivityVO {
     private Long strategyId;
 
     /**
-     * 活动状态：编辑、提审、撤审、通过、运行、拒绝、关闭、开启
+     * 活动状态：1编辑、2提审、3撤审、4通过、5运行(审核通过后worker扫描状态)、6拒绝、7关闭、8开启
      */
     private Integer state;
 
@@ -195,7 +196,7 @@ public class ActivityVO {
 
     @Override
     public String toString() {
-        return "ActivityVO{" +
+        return "ActivityDTO{" +
                 "id=" + id +
                 ", activityId=" + activityId +
                 ", activityName='" + activityName + '\'' +

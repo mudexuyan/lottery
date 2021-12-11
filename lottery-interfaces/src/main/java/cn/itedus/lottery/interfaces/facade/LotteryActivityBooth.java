@@ -1,22 +1,22 @@
 package cn.itedus.lottery.interfaces.facade;
 
-import cn.itedus.lottery.application.process.IActivityProcess;
-import cn.itedus.lottery.application.process.req.DrawProcessReq;
-import cn.itedus.lottery.application.process.res.DrawProcessResult;
-import cn.itedus.lottery.application.process.res.RuleQuantificationCrowdResult;
+import cn.itedus.lottery.application.process.draw.IActivityDrawProcess;
+import cn.itedus.lottery.application.process.draw.req.DrawProcessReq;
+import cn.itedus.lottery.application.process.draw.res.DrawProcessResult;
+import cn.itedus.lottery.application.process.draw.res.RuleQuantificationCrowdResult;
 import cn.itedus.lottery.common.Constants;
 import cn.itedus.lottery.domain.rule.model.req.DecisionMatterReq;
 import cn.itedus.lottery.domain.strategy.model.vo.DrawAwardVO;
 import cn.itedus.lottery.interfaces.assembler.IMapping;
-import cn.itedus.lottery.rpc.ILotteryActivityBooth;
-import cn.itedus.lottery.rpc.dto.AwardDTO;
-import cn.itedus.lottery.rpc.req.DrawReq;
-import cn.itedus.lottery.rpc.req.QuantificationDrawReq;
-import cn.itedus.lottery.rpc.res.DrawRes;
+import cn.itedus.lottery.rpc.activity.booth.ILotteryActivityBooth;
+import cn.itedus.lottery.rpc.activity.booth.dto.AwardDTO;
+import cn.itedus.lottery.rpc.activity.booth.req.DrawReq;
+import cn.itedus.lottery.rpc.activity.booth.req.QuantificationDrawReq;
+import cn.itedus.lottery.rpc.activity.booth.res.DrawRes;
 import com.alibaba.fastjson.JSON;
+import org.apache.dubbo.config.annotation.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 
@@ -27,13 +27,13 @@ import javax.annotation.Resource;
  * @github: https://github.com/fuzhengwei
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
-@Controller
+@Service
 public class LotteryActivityBooth implements ILotteryActivityBooth {
 
     private Logger logger = LoggerFactory.getLogger(LotteryActivityBooth.class);
 
     @Resource
-    private IActivityProcess activityProcess;
+    private IActivityDrawProcess activityProcess;
 
     @Resource
     private IMapping<DrawAwardVO, AwardDTO> awardMapping;

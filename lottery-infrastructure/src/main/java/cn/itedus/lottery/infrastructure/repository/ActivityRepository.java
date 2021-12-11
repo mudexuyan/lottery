@@ -1,6 +1,8 @@
 package cn.itedus.lottery.infrastructure.repository;
 
 import cn.itedus.lottery.common.Constants;
+import cn.itedus.lottery.domain.activity.model.aggregates.ActivityInfoLimitPageRich;
+import cn.itedus.lottery.domain.activity.model.req.ActivityInfoLimitPageReq;
 import cn.itedus.lottery.domain.activity.model.req.PartakeReq;
 import cn.itedus.lottery.domain.activity.model.res.StockResult;
 import cn.itedus.lottery.domain.activity.model.vo.*;
@@ -97,7 +99,7 @@ public class ActivityRepository implements IActivityRepository {
         Activity activity = activityDao.queryActivityById(req.getActivityId());
 
         // 从缓存中获取库存
-        Object usedStockCountObj =  redisUtil.get(Constants.RedisKey.KEY_LOTTERY_ACTIVITY_STOCK_COUNT(req.getActivityId()));
+        Object usedStockCountObj = redisUtil.get(Constants.RedisKey.KEY_LOTTERY_ACTIVITY_STOCK_COUNT(req.getActivityId()));
 
         // 查询领取次数
         UserTakeActivityCount userTakeActivityCountReq = new UserTakeActivityCount();
@@ -176,6 +178,21 @@ public class ActivityRepository implements IActivityRepository {
     public void recoverActivityCacheStockByRedis(Long activityId, String tokenKey, String code) {
         // 删除分布式锁 Key
         redisUtil.del(tokenKey);
+    }
+
+    @Override
+    public ActivityInfoLimitPageRich queryActivityInfoLimitPage(ActivityInfoLimitPageReq req) {
+        Long count = activityDao.queryActivityInfoCount(req);
+        List<Activity> list = activityDao.queryActivityInfoList(req);
+
+        List<ActivityVO> activityVOList = new ArrayList<>();
+        for (Activity activity : list) {
+            ActivityVO activityVO = new ActivityVO();
+            BeanUtils.copyProperties(activity, activityVO);
+            activityVOList.add(activityVO);
+        }
+
+        return new ActivityInfoLimitPageRich(count, activityVOList);
     }
 
 }

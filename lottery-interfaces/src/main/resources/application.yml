@@ -6,7 +6,7 @@ spring:
   # 启动zk：bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
   # 启动kafka：bin/kafka-server-start.sh -daemon config/server.properties
   kafka:
-    bootstrap-servers: 39.96.73.167:9092
+    bootstrap-servers: 127.0.0.1:9092
     producer:
       # 发生错误后，消息重发的次数。
       retries: 1
@@ -117,9 +117,9 @@ dubbo:
     parameters:
       unicast: false
   registry:
-    address: multicast://224.5.6.7:1234
+    address: N/A #multicast://224.5.6.7:1234
   protocol:
     name: dubbo
     port: 20880
   scan:
-    base-packages: cn.itedus.lottery.rpc
+    base-packages: cn.itedus.lottery.rpc.*

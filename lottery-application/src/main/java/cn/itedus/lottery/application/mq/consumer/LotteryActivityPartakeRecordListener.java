@@ -1,7 +1,6 @@
 package cn.itedus.lottery.application.mq.consumer;
 
 import cn.itedus.lottery.domain.activity.model.vo.ActivityPartakeRecordVO;
-import cn.itedus.lottery.domain.activity.model.vo.InvoiceVO;
 import cn.itedus.lottery.domain.activity.service.partake.IActivityPartake;
 import com.alibaba.fastjson.JSON;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

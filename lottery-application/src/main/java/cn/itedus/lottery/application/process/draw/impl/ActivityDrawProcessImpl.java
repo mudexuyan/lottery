@@ -1,10 +1,10 @@
-package cn.itedus.lottery.application.process.impl;
+package cn.itedus.lottery.application.process.draw.impl;
 
 import cn.itedus.lottery.application.mq.producer.KafkaProducer;
-import cn.itedus.lottery.application.process.IActivityProcess;
-import cn.itedus.lottery.application.process.req.DrawProcessReq;
-import cn.itedus.lottery.application.process.res.DrawProcessResult;
-import cn.itedus.lottery.application.process.res.RuleQuantificationCrowdResult;
+import cn.itedus.lottery.application.process.draw.IActivityDrawProcess;
+import cn.itedus.lottery.application.process.draw.req.DrawProcessReq;
+import cn.itedus.lottery.application.process.draw.res.DrawProcessResult;
+import cn.itedus.lottery.application.process.draw.res.RuleQuantificationCrowdResult;
 import cn.itedus.lottery.common.Constants;
 import cn.itedus.lottery.common.Result;
 import cn.itedus.lottery.domain.activity.model.req.PartakeReq;
@@ -39,9 +39,9 @@ import java.util.Map;
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
 @Service
-public class ActivityProcessImpl implements IActivityProcess {
+public class ActivityDrawProcessImpl implements IActivityDrawProcess {
 
-    private Logger logger = LoggerFactory.getLogger(ActivityProcessImpl.class);
+    private Logger logger = LoggerFactory.getLogger(ActivityDrawProcessImpl.class);
 
     @Resource
     private IActivityPartake activityPartake;
