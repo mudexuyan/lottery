@@ -2,6 +2,7 @@ server:
   port: 8081
 
 spring:
+  # 如果你是本地安装 kafka 按照下面的方式启动即可
   # Spring kafka 配置 cd itstack/soft/kafka_2.13-2.8.0
   # 启动zk：bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
   # 启动kafka：bin/kafka-server-start.sh -daemon config/server.properties
