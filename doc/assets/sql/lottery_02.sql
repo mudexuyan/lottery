@@ -11,12 +11,12 @@
  Target Server Version : 50639
  File Encoding         : 65001
 
- Date: 04/12/2021 12:36:54
+ Date: 11/12/2021 21:31:25
 */
 
-create database lottery_03;
+create database lottery_02;
 
-USE lottery_03;
+USE lottery_02;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -51,7 +51,7 @@ CREATE TABLE `user_strategy_export_000` (
 -- Records of user_strategy_export_000
 -- ----------------------------
 BEGIN;
-INSERT INTO `user_strategy_export_000` VALUES (1, 'fustack', 100001, 1444540456057864192, 10001, 2, 1, NULL, 1, '3', 1, 'ipad', 'Code', '1444540456057864192', 0, '2021-10-03 13:50:57', '2021-10-30 12:59:44');
+INSERT INTO `user_strategy_export_000` VALUES (1, 'fustack', 100001, 1444540456057864192, 10001, 2, 1, '2021-12-04 14:06:28', 1, '3', 1, 'ipad', 'Code', '1444540456057864192', 0, '2021-10-03 13:50:57', '2021-12-04 14:06:28');
 INSERT INTO `user_strategy_export_000` VALUES (2, 'fustack', 100001, 1444541565086367744, 10001, 2, 1, NULL, 0, '5', 1, 'Book', 'Code', '1444541565086367744', 0, '2021-10-03 13:55:22', '2021-10-03 13:55:22');
 INSERT INTO `user_strategy_export_000` VALUES (3, 'fustack', 100001, 1444810184030633984, 10001, 2, 1, NULL, 0, '4', 1, 'AirPods', 'Code', '1444810184030633984', 0, '2021-10-04 07:42:45', '2021-10-04 07:42:45');
 INSERT INTO `user_strategy_export_000` VALUES (4, 'fustack', 100001, 1444820311156670464, 10001, 2, 1, NULL, 0, '2', 1, 'iphone', 'Code', '1444820311156670464', 0, '2021-10-04 08:23:00', '2021-10-04 08:23:00');

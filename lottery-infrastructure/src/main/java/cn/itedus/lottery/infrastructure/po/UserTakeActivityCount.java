@@ -24,11 +24,11 @@ public class UserTakeActivityCount {
      */
     private Long activityId;
     /**
-     * 可领取次数
+     * 总计可领次数
      */
     private Integer totalCount;
     /**
-     * 已领取次数
+     * 剩余领取次数
      */
     private Integer leftCount;
     /**

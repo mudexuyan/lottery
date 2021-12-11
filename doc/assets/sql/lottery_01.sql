@@ -11,7 +11,7 @@
  Target Server Version : 50639
  File Encoding         : 65001
 
- Date: 04/12/2021 12:36:47
+ Date: 11/12/2021 21:31:19
 */
 
 create database lottery_01;
@@ -77,7 +77,7 @@ CREATE TABLE `user_strategy_export_001` (
   `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_uuid` (`uuid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COMMENT='用户策略计算结果表';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COMMENT='用户策略计算结果表';
 
 -- ----------------------------
 -- Records of user_strategy_export_001
@@ -90,6 +90,7 @@ INSERT INTO `user_strategy_export_001` VALUES (4, 'xiaofuge', 100001, 1461956681
 INSERT INTO `user_strategy_export_001` VALUES (5, 'xiaofuge', 100001, 1461957264951869440, 10001, 2, 1, '2021-11-20 15:19:10', 1, '4', 1, 'AirPods', 'Code', '1461957196525993984', 1, '2021-11-20 15:19:08', '2021-11-20 15:19:10');
 INSERT INTO `user_strategy_export_001` VALUES (6, 'xiaofuge', 100001, 1461960297911812096, 10001, 2, 1, '2021-11-20 15:31:11', 1, '4', 1, 'AirPods', 'Code', '1461960297228140544', 1, '2021-11-20 15:31:11', '2021-11-20 15:31:11');
 INSERT INTO `user_strategy_export_001` VALUES (7, 'xiaofuge', 100001, 1462024810287726592, 10001, 2, 1, '2021-11-20 19:47:32', 1, '4', 1, 'AirPods', 'Code', '1462024809482420224', 1, '2021-11-20 19:47:32', '2021-11-20 19:47:32');
+INSERT INTO `user_strategy_export_001` VALUES (8, 'xiaofuge', 100001, 1467000348286812160, 10001, 2, 1, NULL, 0, '5', 1, 'Book', 'Code', '1467000346705559552', 0, '2021-12-04 13:18:33', '2021-12-04 13:18:33');
 COMMIT;
 
 -- ----------------------------
@@ -148,13 +149,15 @@ CREATE TABLE `user_strategy_export_003` (
   `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_uuid` (`uuid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COMMENT='用户策略计算结果表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='用户策略计算结果表';
 
 -- ----------------------------
 -- Records of user_strategy_export_003
 -- ----------------------------
 BEGIN;
 INSERT INTO `user_strategy_export_003` VALUES (1, 'Uhdgkw766120d', 120405215, 1443558966104850432, 42480428672, 1, 1, '2021-09-30 20:50:52', 1, '1', 1, 'IMac', '????', '1443558966104850432', NULL, '2021-09-30 20:50:52', '2021-09-30 20:50:52');
+INSERT INTO `user_strategy_export_003` VALUES (2, 'fuzhengwei', 100001, 1469660505059753984, 10001, 2, 1, '2021-12-11 21:29:04', 1, '5', 1, 'Book', 'Code', '1469660503969234944', 1, '2021-12-11 21:29:04', '2021-12-11 21:29:04');
+INSERT INTO `user_strategy_export_003` VALUES (3, 'fuzhengwei', 100001, 1469660784207462400, 10001, 2, 1, '2021-12-11 21:30:10', 1, '5', 1, 'Book', 'Code', '1469660783494430720', 1, '2021-12-11 21:30:10', '2021-12-11 21:30:10');
 COMMIT;
 
 -- ----------------------------
@@ -176,7 +179,7 @@ CREATE TABLE `user_take_activity` (
   `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_uuid` (`uuid`) USING BTREE COMMENT '防重ID'
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户参与活动记录表';
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户参与活动记录表';
 
 -- ----------------------------
 -- Records of user_take_activity
@@ -191,6 +194,9 @@ INSERT INTO `user_take_activity` VALUES (21, 'xiaofuge', 1461956679624163328, 10
 INSERT INTO `user_take_activity` VALUES (22, 'xiaofuge', 1461957196525993984, 100001, '活动名', '2021-11-20 15:18:49', 5, 10001, 1, 'xiaofuge_100001_5', '2021-11-20 15:18:52', '2021-11-20 15:18:52');
 INSERT INTO `user_take_activity` VALUES (23, 'xiaofuge', 1461960297228140544, 100001, '活动名', '2021-11-20 15:31:10', 6, 10001, 1, 'xiaofuge_100001_6', '2021-11-20 15:31:11', '2021-11-20 15:31:11');
 INSERT INTO `user_take_activity` VALUES (24, 'xiaofuge', 1462024809482420224, 100001, '活动名', '2021-11-20 19:47:31', 7, 10001, 1, 'xiaofuge_100001_7', '2021-11-20 19:47:32', '2021-11-20 19:47:32');
+INSERT INTO `user_take_activity` VALUES (25, 'xiaofuge', 1467000346705559552, 100001, '活动名', '2021-12-04 13:18:31', 8, 10001, 1, 'xiaofuge_100001_8', '2021-12-04 13:18:32', '2021-12-04 13:18:32');
+INSERT INTO `user_take_activity` VALUES (26, 'fuzhengwei', 1469660503969234944, 100001, '活动名', '2021-12-11 21:29:03', 1, 10001, 1, 'fuzhengwei_100001_1', '2021-12-11 21:29:03', '2021-12-11 21:29:03');
+INSERT INTO `user_take_activity` VALUES (27, 'fuzhengwei', 1469660783494430720, 100001, '活动名', '2021-12-11 21:30:08', 2, 10001, 1, 'fuzhengwei_100001_2', '2021-12-11 21:30:10', '2021-12-11 21:30:10');
 COMMIT;
 
 -- ----------------------------
@@ -207,14 +213,15 @@ CREATE TABLE `user_take_activity_count` (
   `update_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_uId_activityId` (`u_id`,`activity_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='用户活动参与次数表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='用户活动参与次数表';
 
 -- ----------------------------
 -- Records of user_take_activity_count
 -- ----------------------------
 BEGIN;
 INSERT INTO `user_take_activity_count` VALUES (1, 'Uhdgkw766120d', 100001, 10, 6, '2021-10-01 15:29:27', '2021-10-01 15:29:27');
-INSERT INTO `user_take_activity_count` VALUES (2, 'xiaofuge', 100001, 10, 3, '2021-10-30 15:19:43', '2021-10-30 15:19:43');
+INSERT INTO `user_take_activity_count` VALUES (2, 'xiaofuge', 100001, 10, 2, '2021-10-30 15:19:43', '2021-10-30 15:19:43');
+INSERT INTO `user_take_activity_count` VALUES (3, 'fuzhengwei', 100001, 10, 8, '2021-12-11 21:29:03', '2021-12-11 21:29:03');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
