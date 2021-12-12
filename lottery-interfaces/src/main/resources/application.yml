@@ -49,10 +49,10 @@ spring:
   # redis.conf protected-mode yes 改为 protected-mode no
   redis:
     database: 0
-    host: 39.96.73.167      # Redis服务器地址，修改为你的地址
-    port: 6379              # Redis服务器连接端口
-    password: 1234          # Redis服务器连接密码（默认为空）
-    timeout: 3000           # Redis服务器链接超时配置
+    host: 127.0.0.1     # Redis服务器地址，修改为你的地址
+    port: 6379          # Redis服务器连接端口
+    password:           # Redis服务器连接密码（默认为空）
+    timeout: 3000       # Redis服务器链接超时配置
 
 # xxl-job
 # 官网：https://github.com/xuxueli/xxl-job/
@@ -93,17 +93,17 @@ mini-db-router:
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://127.0.0.1:3306/lottery?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: 1234
+        password: 123456
       db01:
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://127.0.0.1:3306/lottery_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: 1234
+        password: 123456
       db02:
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://127.0.0.1:3306/lottery_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: 1234
+        password: 123456
 
 # Mybatis
 mybatis:
