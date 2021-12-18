@@ -43,12 +43,22 @@ public class StrategyRepository implements IStrategyRepository {
         List<StrategyDetail> strategyDetailList = strategyDetailDao.queryStrategyDetailList(strategyId);
 
         StrategyBriefVO strategyBriefVO = new StrategyBriefVO();
-        BeanUtils.copyProperties(strategy, strategyBriefVO);
+        strategyBriefVO.setStrategyId(strategy.getStrategyId());
+        strategyBriefVO.setStrategyDesc(strategy.getStrategyDesc());
+        strategyBriefVO.setStrategyMode(strategy.getStrategyMode());
+        strategyBriefVO.setGrantType(strategy.getGrantType());
+        strategyBriefVO.setGrantDate(strategy.getGrantDate());
+        strategyBriefVO.setExtInfo(strategy.getExtInfo());
 
         List<StrategyDetailBriefVO> strategyDetailBriefVOList = new ArrayList<>();
         for (StrategyDetail strategyDetail : strategyDetailList) {
-            StrategyDetailBriefVO strategyDetailBriefVO = new StrategyDetailBriefVO();
-            BeanUtils.copyProperties(strategyDetail, strategyDetailBriefVO);
+            StrategyDetailBriefVO  strategyDetailBriefVO = new StrategyDetailBriefVO();
+            strategyDetailBriefVO.setStrategyId(strategyDetail.getStrategyId());
+            strategyDetailBriefVO.setAwardId(strategyDetail.getAwardId());
+            strategyDetailBriefVO.setAwardName(strategyDetail.getAwardName());
+            strategyDetailBriefVO.setAwardCount(strategyDetail.getAwardCount());
+            strategyDetailBriefVO.setAwardSurplusCount(strategyDetail.getAwardSurplusCount());
+            strategyDetailBriefVO.setAwardRate(strategyDetail.getAwardRate());
             strategyDetailBriefVOList.add(strategyDetailBriefVO);
         }
 
@@ -61,6 +71,8 @@ public class StrategyRepository implements IStrategyRepository {
         Award award = awardDao.queryAwardInfo(awardId);
 
         // 可以使用 BeanUtils.copyProperties(award, awardBriefVO)、或者基于ASM实现的Bean-Mapping，但在效率上最好的依旧是硬编码
+        // 以使用自研 vo2dto 插件，帮助生成 x.set(y.get) 插件安装包：https://github.com/fuzhengwei/guide-idea-plugin/releases/tag/v2.0.2
+
         AwardBriefVO awardBriefVO = new AwardBriefVO();
         awardBriefVO.setAwardId(award.getAwardId());
         awardBriefVO.setAwardType(award.getAwardType());

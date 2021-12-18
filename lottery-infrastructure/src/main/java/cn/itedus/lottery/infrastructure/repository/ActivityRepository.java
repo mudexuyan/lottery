@@ -49,7 +49,21 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public void addActivity(ActivityVO activity) {
         Activity req = new Activity();
-        BeanUtils.copyProperties(activity, req);
+        req.setId(activity.getId());
+        req.setActivityId(activity.getActivityId());
+        req.setActivityName(activity.getActivityName());
+        req.setActivityDesc(activity.getActivityDesc());
+        req.setBeginDateTime(activity.getBeginDateTime());
+        req.setEndDateTime(activity.getEndDateTime());
+        req.setStockCount(activity.getStockCount());
+        req.setStockSurplusCount(activity.getStockSurplusCount());
+        req.setTakeCount(activity.getTakeCount());
+        req.setStrategyId(activity.getStrategyId());
+        req.setState(activity.getState());
+        req.setCreator(activity.getCreator());
+        req.setCreateTime(activity.getCreateTime());
+        req.setUpdateTime(activity.getUpdateTime());
+
         activityDao.insert(req);
 
         // 设置活动库存 KEY
@@ -61,7 +75,10 @@ public class ActivityRepository implements IActivityRepository {
         List<Award> req = new ArrayList<>();
         for (AwardVO awardVO : awardList) {
             Award award = new Award();
-            BeanUtils.copyProperties(awardVO, award);
+            award.setAwardId(awardVO.getAwardId());
+            award.setAwardType(awardVO.getAwardType());
+            award.setAwardName(awardVO.getAwardName());
+            award.setAwardContent(awardVO.getAwardContent());
             req.add(award);
         }
         awardDao.insertList(req);
@@ -70,7 +87,13 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public void addStrategy(StrategyVO strategy) {
         Strategy req = new Strategy();
-        BeanUtils.copyProperties(strategy, req);
+        req.setStrategyId(strategy.getStrategyId());
+        req.setStrategyDesc(strategy.getStrategyDesc());
+        req.setStrategyMode(strategy.getStrategyMode());
+        req.setGrantType(strategy.getGrantType());
+        req.setGrantDate(strategy.getGrantDate());
+        req.setExtInfo(strategy.getExtInfo());
+
         strategyDao.insert(req);
     }
 
@@ -79,7 +102,12 @@ public class ActivityRepository implements IActivityRepository {
         List<StrategyDetail> req = new ArrayList<>();
         for (StrategyDetailVO strategyDetailVO : strategyDetailList) {
             StrategyDetail strategyDetail = new StrategyDetail();
-            BeanUtils.copyProperties(strategyDetailVO, strategyDetail);
+            strategyDetail.setStrategyId(strategyDetailVO.getStrategyId());
+            strategyDetail.setAwardId(strategyDetailVO.getAwardId());
+            strategyDetail.setAwardName(strategyDetailVO.getAwardName());
+            strategyDetail.setAwardCount(strategyDetailVO.getAwardCount());
+            strategyDetail.setAwardSurplusCount(strategyDetailVO.getAwardSurplusCount());
+            strategyDetail.setAwardRate(strategyDetailVO.getAwardRate());
             req.add(strategyDetail);
         }
         strategyDetailDao.insertList(req);
@@ -188,7 +216,21 @@ public class ActivityRepository implements IActivityRepository {
         List<ActivityVO> activityVOList = new ArrayList<>();
         for (Activity activity : list) {
             ActivityVO activityVO = new ActivityVO();
-            BeanUtils.copyProperties(activity, activityVO);
+            activityVO.setId(activity.getId());
+            activityVO.setActivityId(activity.getActivityId());
+            activityVO.setActivityName(activity.getActivityName());
+            activityVO.setActivityDesc(activity.getActivityDesc());
+            activityVO.setBeginDateTime(activity.getBeginDateTime());
+            activityVO.setEndDateTime(activity.getEndDateTime());
+            activityVO.setStockCount(activity.getStockCount());
+            activityVO.setStockSurplusCount(activity.getStockSurplusCount());
+            activityVO.setTakeCount(activity.getTakeCount());
+            activityVO.setStrategyId(activity.getStrategyId());
+            activityVO.setState(activity.getState());
+            activityVO.setCreator(activity.getCreator());
+            activityVO.setCreateTime(activity.getCreateTime());
+            activityVO.setUpdateTime(activity.getUpdateTime());
+
             activityVOList.add(activityVO);
         }
 
